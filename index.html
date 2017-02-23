@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEBCHAT BY POLLYNG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        .container{
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow:hidden;
+            position: absolute;
+        }
+        .container .panel{
+            height: 100%;
+        }
+        .container .panel-heading{
+            height: 6%;
+        }
+        .container .panel-body{
+            height: 85%;
+            overflow-y: scroll;
+        }
+        .container .panel-footer{
+            height: 9%;
+        }
+        #selectfiles{
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 99999;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h1 class="panel-title">CHAT</h1>
+        </div>
+        <div class="panel-body">
+            <div id="chat"></div>
+        </div>
+        <div class="panel-footer">
+            <div class="input-group">
+                <span class="input-group-btn" style="display:none">
+                    <input type="file" id="selectfiles" value="选择文件" />
+                    <button class="btn btn-default" id="postfiles" type="button">上传图片</button>
+                </span>
+                <input type="text" id="newMsg" class="form-control">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" id="sendMsg" type="button">发送!</button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="oss.js"></script>
+<!--<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>-->
+</body>
+</html>
