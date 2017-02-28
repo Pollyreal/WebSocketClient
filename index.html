@@ -40,13 +40,20 @@
 <div class="container">
     <div class="panel panel-primary">
         <div class="panel-heading">
-            <h1 class="panel-title">CHAT</h1>
+            <div class="panel-title">
+                <span>CHAT</span>
+            </div>
         </div>
         <div class="panel-body">
             <div id="chat"></div>
         </div>
         <div class="panel-footer">
             <div class="input-group">
+                <input type="text" id="nickname" class="form-control" placeholder="输入昵称">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" id="js-set-nickname">确定</button>
+                </span>
+
                 <span class="input-group-btn" style="display:none">
                     <input type="file" id="selectfiles" value="选择文件" />
                     <button class="btn btn-default" id="postfiles" type="button">上传图片</button>
